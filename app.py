@@ -9,8 +9,7 @@ st.header('Anúncios de vendas de Carros')
 hist_button = st.button('Criar histograma')
 if hist_button:
     st.write('Criando um histograma para o conjunto de dados de anúncios de vendas de carros')
-    fig = px.histogram(car_data, x="odometer"
-                      color_discrete_sequence=["#FFB6C1"])
+    fig = px.histogram(car_data, x="odometer", color_discrete_sequence=["#FFB6C1"])
     st.plotly_chart(fig, use_container_width=True)
     fig.show()
 
